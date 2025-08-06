@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Inspiration - Landing Page</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: black;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+    }
+
+    header {
+      margin-top: 80px;
+      font-size: 3rem;
+      font-weight: bold;
+      text-shadow: 0 0 20px #ff00ff, 0 0 40px #00ffff;
+      animation: blink 2s infinite alternate;
+    }
+
+    @keyframes blink {
+      0% { color: #fff700; text-shadow: 0 0 15px #fff700; }
+      50% { color: #00ffd0; text-shadow: 0 0 20px #00ffd0; }
+      100% { color: #ff33ff; text-shadow: 0 0 25px #ff33ff; }
+    }
+
+    .content {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 30px 50px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(255,255,255,0.2);
+      font-size: 1.5rem;
+      line-height: 2rem;
+      animation: float 4s ease-in-out infinite;
+      backdrop-filter: blur(5px);
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-15px); }
+      100% { transform: translateY(0px); }
+    }
+
+    footer {
+      width: 100%;
+      padding: 20px;
+      background: rgba(255,255,255,0.05);
+      color: white;
+      font-weight: bold;
+      letter-spacing: 1px;
+      font-size: 1.1rem;
+      border-top: 2px solid rgba(255,255,255,0.2);
+    }
+
+    footer span {
+      animation: glow 1.5s ease-in-out infinite alternate;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #fff, 0 0 20px #ff00ff; }
+      to { text-shadow: 0 0 20px #00ffff, 0 0 30px #ff00ff; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>✨ Digital Inspiration ✨</header>
+
+  <div class="content">
+    <p>Thank you for registering. We will notify you about the next procedure.</p>
+  </div>
+
+  <footer>
+    Designed by: <span>CSP | 8147356664</span>
+  </footer>
+
+</body>
+</html>
